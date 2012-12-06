@@ -8,6 +8,10 @@ require 'spec_helper'
 
     before { visit root_path }
 
+    # my_html = page.html
+    # logger.debug "Pages: #{my_html}"
+    # tail -f log/test.log
+    
     it { should have_selector('h1',
                               content: 'Sample App') }
     
